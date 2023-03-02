@@ -1,25 +1,11 @@
-#!/usr/bin/python
-# -*- coding: utf-8 -*-
-
-"""
-    MessageFunction.py: Propagates a message depending on two nodes and their common edge.
-
-    Usage:
-
-"""
-
 from __future__ import print_function
-
-
 import time
 import torch
 import torch.nn as nn
 import os
 import argparse
 import numpy as np
-
 from torch.autograd.variable import Variable
-
 
 try:
     from .MessageFunction import MessageFunction
@@ -30,12 +16,9 @@ except:
     from UpdateFunction import UpdateFunction
     from nnet import NNet
 
+
 # dtype = torch.cuda.FloatTensor
 dtype = torch.FloatTensor
-
-__author__ = "Pau Riba, Anjan Dutta"
-__email__ = "priba@cvc.uab.cat, adutta@cvc.uab.cat"
-
 
 class ReadoutFunction(nn.Module):
 

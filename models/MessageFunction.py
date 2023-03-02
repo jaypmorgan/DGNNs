@@ -1,13 +1,3 @@
-#!/usr/bin/python
-# -*- coding: utf-8 -*-
-
-"""
-    MessageFunction.py: Propagates a message depending on two nodes and their common edge.
-
-    Usage:
-
-"""
-
 from __future__ import print_function
 
 import numpy as np
@@ -23,10 +13,6 @@ try:
     from .nnet import NNet
 except:
     from nnet import NNet
-
-
-__author__ = "Pau Riba, Anjan Dutta"
-__email__ = "priba@cvc.uab.cat, adutta@cvc.uab.cat"
 
 
 class MessageFunction(nn.Module):

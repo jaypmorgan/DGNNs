@@ -1,13 +1,3 @@
-#!/usr/bin/python
-# -*- coding: utf-8 -*-
-
-"""
-    UpdateFunction.py: Updates the nodes using the previous state and the message.
-
-    Usage:
-
-"""
-
 from __future__ import print_function
 
 import numpy as np
@@ -27,12 +17,8 @@ except:
     from MessageFunction import MessageFunction
     from nnet import NNet
 
-
 # dtype = torch.cuda.FloatTensor
 dtype = torch.FloatTensor
-
-__author__ = "Pau Riba, Anjan Dutta"
-__email__ = "priba@cvc.uab.cat, adutta@cvc.uab.cat"
 
 
 class UpdateFunction(nn.Module):
